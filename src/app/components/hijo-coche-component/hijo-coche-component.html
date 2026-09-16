@@ -1,1 +1,18 @@
-<p>hijo-coche-component works!</p>
+<div>
+    <h1 style="color:blue">
+        {{car.marca}} {{car.modelo}}
+    </h1>
+    <h2 [class.verde]="car.estado == true"
+    [class.rojo]="car.estado == false">
+        {{mensaje}}
+    </h2>
+    <h2>
+        Velocidad actual: {{car.velocidad}} km/h
+    </h2>
+    <button (click)="encenderCoche()">
+        Encender/apagar coche
+    </button>
+    <button (click)="acelerarCoche()">
+        Acelerar!!!
+    </button>
+</div>
