@@ -19,11 +19,7 @@ export class LibreriaComponent implements OnInit {
     let path: string = "./assets/comics.json";
     fetch(path).then(res => res.json())
     .then((data: any[]) =>{
-      for (let elem of data){
-        let comic: Comic = new Comic(elem.nombre, elem.imagen, elem.descripcion);
-        aux.push(comic);
-        console.log("Nombre: " + elem.nombre);
-      }
+      aux = data.map(elem => new Comic(elem.nombre, elem.imagen, elem.descripcion));
       this.comicsArray = aux;
       this._cdr.detectChanges();
     })

@@ -16,6 +16,7 @@ import { HijoNumeroComponent } from './components/hijo-numero-component/hijo-num
 import { LibreriaComponent } from './components/libreria-component/libreria-component';
 import { ComicComponent } from './components/comic-component/comic-component';
 import { LecturafilesComponent } from './components/lecturafiles-component/lecturafiles-component';
+import { LecturaExcelComponent } from './components/lectura-excel-component/lectura-excel-component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { LecturafilesComponent } from './components/lecturafiles-component/lectu
     LibreriaComponent,
     ComicComponent,
     LecturafilesComponent,
+    LecturaExcelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],

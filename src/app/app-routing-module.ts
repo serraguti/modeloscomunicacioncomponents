@@ -8,6 +8,7 @@ import { PadreDeportesComponent } from './components/padre-deportes-component/pa
 import { PadreNumerosComponent } from './components/padre-numeros-component/padre-numeros-component';
 import { LibreriaComponent } from './components/libreria-component/libreria-component';
 import { LecturafilesComponent } from './components/lecturafiles-component/lecturafiles-component';
+import { LecturaExcelComponent } from './components/lectura-excel-component/lectura-excel-component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent}, 
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: "padrenumeros", component: PadreNumerosComponent},
   { path: "libreriacomics", component: LibreriaComponent},
   { path: "lecturafiles", component: LecturafilesComponent},
+  { path: "lecturaexcel", component: LecturaExcelComponent},
 ];
 
 @NgModule({
