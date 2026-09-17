@@ -17,6 +17,7 @@ import { LibreriaComponent } from './components/libreria-component/libreria-comp
 import { ComicComponent } from './components/comic-component/comic-component';
 import { LecturafilesComponent } from './components/lecturafiles-component/lecturafiles-component';
 import { LecturaExcelComponent } from './components/lectura-excel-component/lectura-excel-component';
+import { UploadFilesComponent } from './components/upload-files-component/upload-files-component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { LecturaExcelComponent } from './components/lectura-excel-component/lect
     ComicComponent,
     LecturafilesComponent,
     LecturaExcelComponent,
+    UploadFilesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],

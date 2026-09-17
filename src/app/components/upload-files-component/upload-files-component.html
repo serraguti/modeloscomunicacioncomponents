@@ -1,0 +1,19 @@
+<div>
+    <h1>Upload files</h1>
+    <input type="file" multiple="false"
+    (change)="onFileSelected($event)"/>
+    <p style="color:red">
+        {{content}}
+    </p>
+    <hr/>
+    <h2>Read Excel file</h2>
+    <input type="file" multiple="false"
+    (change)="onFileSelectedExcel($event)"/>
+    <div style="float: left">
+        @for (comic of comicsArray; track comic){
+            <h1 style="color:blue">{{comic.titulo}}</h1>
+            <img src="{{comic.imagen}}"
+            style="width: 120px; height: 140px;"/>
+        }
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { PadreNumerosComponent } from './components/padre-numeros-component/padr
 import { LibreriaComponent } from './components/libreria-component/libreria-component';
 import { LecturafilesComponent } from './components/lecturafiles-component/lecturafiles-component';
 import { LecturaExcelComponent } from './components/lectura-excel-component/lectura-excel-component';
+import { UploadFilesComponent } from './components/upload-files-component/upload-files-component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent}, 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: "libreriacomics", component: LibreriaComponent},
   { path: "lecturafiles", component: LecturafilesComponent},
   { path: "lecturaexcel", component: LecturaExcelComponent},
+  { path: "uploadfiles", component: UploadFilesComponent},
 ];
 
 @NgModule({

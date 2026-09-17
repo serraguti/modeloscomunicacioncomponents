@@ -1,1 +1,8 @@
-<p>lectura-excel-component works!</p>
+<div>
+    <h1>Read Excel file</h1>
+    @for (comic of comicsArray; track comic){
+        <h1>{{comic.titulo}}</h1>
+        <img src="{{comic.imagen}}"
+        style="width: 150px; height: 170px"/>
+    }    
+</div>
