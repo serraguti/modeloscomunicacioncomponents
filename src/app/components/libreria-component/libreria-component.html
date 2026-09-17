@@ -1,0 +1,16 @@
+<div>
+    <h2>Librería Comics</h2>
+    @if (comicFavorito){
+        <div style="background-color: lightgreen;">
+            <h2 style="color:blue">{{comicFavorito.titulo}}</h2>
+            <h3 style="color:red">{{comicFavorito.descripcion}}</h3>
+            <img src="{{comicFavorito.imagen}}"
+            style="width: 100px; height: 120px; "/>            
+        </div>
+    }
+    @for (c of comicsArray; track c; let i = $index){
+        <app-comic-component [comic]="c" [index]="i"
+        (deleteComic)="deleteComic($event)"
+        (mostrarFavorito)="mostrarFavorito($event)"></app-comic-component>
+    }
+</div>

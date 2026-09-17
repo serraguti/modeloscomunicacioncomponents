@@ -1,0 +1,14 @@
+<div>
+    <h1>Read files Angular</h1>
+    @for (comic of comicsArray; track comic){
+        <h1>{{comic.titulo}}</h1>
+        <img src="{{comic.imagen}}"
+        style="width: 150px; height: 170px"/>
+    }
+    <button (click)="readFileText()">
+        Read Text
+    </button>
+    <p style="color:blue">
+        {{content}}
+    </p>
+</div>

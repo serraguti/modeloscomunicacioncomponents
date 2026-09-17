@@ -1,0 +1,14 @@
+<div>
+    <h1>Array números Comunicación</h1>
+    <button (click)="generarNumero()">
+        Generar número
+    </button>
+    <h2 style="color:blue">
+        La suma es: {{suma}}
+    </h2>
+    <h2>Elems: {{numerosArray.length}}</h2>
+    @for (num of numerosArray; track num){
+        <app-hijo-numero-component [numero]="num"
+        (sumarNumerosParent)="sumarNumerosParent($event)"></app-hijo-numero-component>
+    }
+</div>
